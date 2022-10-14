@@ -54,7 +54,7 @@ const App = () => {
               <button
                 key={indexx}
                 onClick={() => setIndex(indexx)}
-                className={indexx === index && 'btn-active'}
+                className={`${indexx === index && 'btn-active'}`}
               >
                 {item}
               </button>
