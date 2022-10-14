@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+    color: black;
+}
+
+main {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.underline {
+    width: 40%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: rgb(127, 182, 255);
+}
+
+section {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+.btn-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    width: 100%;
+    border: 2px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    color: rgb(127, 182, 255);
+    border-left: 2px solid rgb(127, 182, 255);
+}
+
+.btn-active {
+    color: rgb(127, 182, 255);
+    border-left: 2px solid rgb(127, 182, 255);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 0px 50px;
+}
+
+h2 {
+    font-weight: 500;
+}
+
+h3 {
+    padding: 5px;
+    background-color: rgba(161, 161, 161, 0.404);
+    width: max-content;
+    border-radius: 3px;
+    color: rgb(121, 136, 158);
+    margin: 15px 0px;
+}
+
+h4 {
+    color: rgb(113, 144, 172);
+    font-weight: 300;
+    margin: 15px 0px 20px 0px;
+}
+
+ul {
+    width: 100%;
+    height: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon {
+    font-size: 40px;
+    color: rgb(127, 182, 255);
+    min-width: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+@media only screen and (max-width: 800px) {
+    section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .btn-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button {
+        width: 100px;
+    }
+
+    button:hover {
+        color: rgb(127, 182, 255);
+        border-bottom: 2px solid rgb(127, 182, 255);
+        border-left: transparent;
+    }
+
+    .btn-active {
+        color: rgb(127, 182, 255);
+        border-bottom: 2px solid rgb(127, 182, 255);
+        border-left: transparent;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        padding: 10px;
+    }
+}
